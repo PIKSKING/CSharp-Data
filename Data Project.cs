@@ -11,22 +11,20 @@ namespace DoublyLinkedList
         static void Main(String[] args)
         {
 
-
-            // Creating object of linkedList
             linkedList list = new linkedList();
-            Console.WriteLine("Doubly Linked List Test\n");
-            char ch;
+            Console.WriteLine("Doubly Linked List of Pouria Aghaei Shahvali\n");
+            char chet;
 
             do
             {
-                // Perform list operations
                 Console.WriteLine("\nDoubly Linked List Operations\n");
-                Console.WriteLine("1. Insert at begining");
-                Console.WriteLine("2. Insert at end");
-                Console.WriteLine("3. Insert at position");
-                Console.WriteLine("4. Delete at position");
-                Console.WriteLine("5. Check empty");
-                Console.WriteLine("6. Get size");
+                Console.WriteLine("1. Insert at The Begining");
+                Console.WriteLine("2. Insert at The End");
+                Console.WriteLine("3. Insert at A Position");
+                Console.WriteLine("4. Delete at A Position");
+                Console.WriteLine("5. Check if Empty");
+                Console.WriteLine("6. Get Size");
+                Console.WriteLine("7. Exit");
 
                 Console.Write("Enter choice : ");
 
@@ -65,17 +63,18 @@ namespace DoublyLinkedList
                     case 6:
                         Console.Write("Size = " + list.getSize() + " \n");
                         break;
+                    case 7:
+                        return0;
+                        break;
                     default:
                         Console.Write("Wrong Entry \n ");
                         break;
                 }
-
-                // Display List
                 list.display();
                 Console.Write("\nDo you want to continue (Type y or n) : ");
-                ch = Console.ReadLine().ElementAt(0);
+                chet = Console.ReadLine().ElementAt(0);
 
-            } while (ch == 'Y' || ch == 'y');
+            } while (chet == 'Y' || chet == 'y');
         }
         class Node
         {
